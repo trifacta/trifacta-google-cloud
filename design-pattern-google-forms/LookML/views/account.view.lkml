@@ -1,5 +1,5 @@
 view: account {
-  sql_table_name: `leigha-bq-dev.testing.account2`;;
+  sql_table_name: `my-project.my-dataset.account`;;
   drill_fields: [name, website, type, owner_id]
 
   dimension: id {
