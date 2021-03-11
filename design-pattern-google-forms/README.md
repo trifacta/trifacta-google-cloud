@@ -8,7 +8,7 @@ The goal of [this guide](technical_guide.md) is to provide an end-to-end solutio
 * [Complete technical guide](technical_guide.md)
 * [Google Form Survey Sample](https://docs.google.com/forms/u/0/d/1kNxBcrWKJzQBzey9W87g9hJtMdJv3evTDnSw44GFUgg/viewform?edit_requested=true)
 * [Google Sheets Survey Responses Sample](https://docs.google.com/spreadsheets/d/1DgIlvlLceFDqWEJs91F8rt1B-X0PJGLY6shkKGBPWpk/edit?usp=sharing)
-* [Cloud Datapre by Trifacta Flow Export](https://github.com/trifacta/trifacta-google-cloud/raw/main/design-pattern-google-forms/flow_Google_Forms_Analytics_Design_Pattern.zip)
+* [Cloud Dataprep by Trifacta Flow Export](https://github.com/trifacta/trifacta-google-cloud/raw/main/design-pattern-google-forms/flow_Google_Forms_Analytics_Design_Pattern.zip)
 * [Data Studio Sample Report](https://datastudio.google.com/reporting/e5dc136c-20f6-4112-82bc-50c5b8653cf4)
 * [Looker Sample Report](https://patternsfactory.cloud.looker.com/embed/dashboards-next/1)
 
