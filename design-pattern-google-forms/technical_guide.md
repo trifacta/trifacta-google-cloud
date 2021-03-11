@@ -65,10 +65,9 @@ To generate a cost estimate based on your projected usage, use the [pricing calc
 
 1. In the Google Cloud Console, on the project selector page, select or create a Google Cloud project.
 
+[Go to the project selector page](https://console.cloud.google.com/projectselector2/home/dashboard?_ga=2.160760575.336863925.1606037980-454881161.1598040324&_gac=1.187200730.1605625914.Cj0KCQiAhs79BRD0ARIsAC6XpaUEshc6odnj_JRsGRs7YksBGoyLf5QlEBwmp6YpSVvTHYqGq9hfmTMaAhp0EALw_wcB)
+
 > **Note**: If you don't plan to keep the resources that you create in this procedure, create a new project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.
-
-
-    [Go to the project selector page](https://console.cloud.google.com/projectselector2/home/dashboard?_ga=2.160760575.336863925.1606037980-454881161.1598040324&_gac=1.187200730.1605625914.Cj0KCQiAhs79BRD0ARIsAC6XpaUEshc6odnj_JRsGRs7YksBGoyLf5QlEBwmp6YpSVvTHYqGq9hfmTMaAhp0EALw_wcB)
 
 2. Make sure that billing is enabled for your Cloud project. [Learn how to confirm that billing is enabled for your project](https://cloud.google.com/billing/docs/how-to/modify-project)<span style="text-decoration:underline;">. </span>
 3. BigQuery should be enabled on new projects automatically, to [enable it on an existing project go here](https://console.cloud.google.com/flows/enableapi?apiid=bigquery&_ga=2.115879941.2010348727.1614953739-721676811.1611696959). You can also learn more about [getting started with BigQuery from the Cloud Console here](https://cloud.google.com/bigquery/docs/quickstarts/quickstart-web-ui).  
@@ -238,10 +237,9 @@ After you have edited the “Manual destinations”, proceed the same way for th
 Iterate on each output following the same steps. In total you have to edit 8 destinations. 
 
 
-```
-Manual destinations let you run each individual output job independently and on-demand. This is convenient to test a data preparation recipe and validate a result during the design of your flow. 
+> **Manual destinations** let you run each individual output job independently and on-demand. This is convenient to test a data preparation recipe and validate a result during the design of your flow. 
 
-Scheduled destinations are used when you want to run your flow routinely. For example you may want to reload the Google Forms results into BigQuery every day so you get a refresh of your reports with the latest answers. 
+> **Scheduled destinations** are used when you want to run your flow routinely. For example you may want to reload the Google Forms results into BigQuery every day so you get a refresh of your reports with the latest answers. 
 ```
 
 
