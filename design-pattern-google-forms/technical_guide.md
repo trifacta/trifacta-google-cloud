@@ -240,8 +240,6 @@ Iterate on each output following the same steps. In total you have to edit 8 des
 > **Manual destinations** let you run each individual output job independently and on-demand. This is convenient to test a data preparation recipe and validate a result during the design of your flow. 
 
 > **Scheduled destinations** are used when you want to run your flow routinely. For example you may want to reload the Google Forms results into BigQuery every day so you get a refresh of your reports with the latest answers. 
-```
-
 
 
 # Cloud Dataprep Flow Explained
