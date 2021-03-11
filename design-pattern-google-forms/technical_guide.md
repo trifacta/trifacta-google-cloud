@@ -108,7 +108,7 @@ Survey questions can vary from simple single value fields to advanced multiple c
 *   **Response**: cell value
 *   **Transformation requirements**: no transformation is needed; the response is loaded as-is.
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image4.png "image_tooltip")
 
 ### Multiple Choices Questions: multiple choices, checkbox
 
