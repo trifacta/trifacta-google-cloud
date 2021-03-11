@@ -31,7 +31,7 @@ Cloud Dataprep is used to restructure the survey responses using various transfo
 The following diagram shows the components and the process used to build the automated pipeline.
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/image15.png "image_tooltip")
 
 
 With the principles mentioned above and this architecture as a guideline, let’s review each step to implement the solution.
@@ -81,16 +81,16 @@ To generate a cost estimate based on your projected usage, use the [pricing calc
 We’ll start by taking a closer look at the Google Forms responses to [our example survey](https://docs.google.com/forms/d/1kNxBcrWKJzQBzey9W87g9hJtMdJv3evTDnSw44GFUgg/edit). 
 
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/image25.png "image_tooltip")
 
 
 Survey results can be exported from the “responses” tab by clicking the Google Sheets icon and creating a new spreadsheet or loading the results into an existing one. Google Forms will continue to add responses to the spreadsheet as responders submit their replies until you deselect the “Accepting responses” button.  
 
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/image24.png "image_tooltip")
 
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/image12.png "image_tooltip")
 
 
 Let’s now review each response type and how it translates in the Google Sheets file.
@@ -108,6 +108,7 @@ Survey questions can vary from simple single value fields to advanced multiple c
 *   **Response**: cell value
 *   **Transformation requirements**: no transformation is needed; the response is loaded as-is.
 
+![alt_text](images/image5.png "image_tooltip")
 
 ### Multiple Choices Questions: multiple choices, checkbox
 
@@ -117,7 +118,7 @@ Survey questions can vary from simple single value fields to advanced multiple c
 *   **Transformation requirements**: the list of values needs to be extracted and pivoted, so each response becomes a new row.
 
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image17.png "image_tooltip")
 
 
 
@@ -126,7 +127,7 @@ Survey questions can vary from simple single value fields to advanced multiple c
 Here is an example of a multiple choices question. One has to select one single value from each row. 
 
 
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](images/image18.png "image_tooltip")
 
 
 *   **Question name**: each individual question becomes a column name with this format “Question [Option]”.
@@ -134,7 +135,7 @@ Here is an example of a multiple choices question. One has to select one single 
 *   **Transformation requirements**: each question/answer must become a new row in the table and broken into two columns. One column mentioning the question _option_ and the other column with the response.
 
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](images/image27.png "image_tooltip")
 
 
 
@@ -143,7 +144,7 @@ Here is an example of a multiple choices question. One has to select one single 
 Here is an example of a checkbox grid. One can select none to multiple values from each row. 
 
 
-![alt_text](images/image8.png "image_tooltip")
+![alt_text](images/image23.png "image_tooltip")
 
 
 
@@ -157,7 +158,7 @@ Here is an example of a checkbox grid. One can select none to multiple values fr
     Second: each individual response must become a new row in the table and broken into two columns. One column mentioning the question _option_ and the other column with the answer. 
 
 
-![alt_text](images/image9.png "image_tooltip")
+![alt_text](images/image6.png "image_tooltip")
 
 
 Next, we’ll show how these transformations are handled with Cloud Dataprep. 
@@ -172,13 +173,13 @@ Download the [Google Forms Analytics Design Pattern](https://github.com/trifacta
 
 
 
-![alt_text](images/image10.png "image_tooltip")
+![alt_text](images/image11.png "image_tooltip")
 
 
 After you have imported the flow, select the imported flow to edit it, your screen should look like this.
 
 
-![alt_text](images/image11.png "image_tooltip")
+![alt_text](images/image8.png "image_tooltip")
 
 
 
@@ -193,7 +194,7 @@ On the left side of the flow, the data source must be reconnected to a Google Sh
 Then click on the “Import Datasets” link at the bottom of the modal. Click the “Edit path” pencil.
 
 
-![alt_text](images/image13.png "image_tooltip")
+![alt_text](images/image26.png "image_tooltip")
  
 
 From there, replace the current value with this link that is pointing to a Google Sheets with some Google Forms results, you can use our example or your own copy: [https://docs.google.com/spreadsheets/d/1DgIlvlLceFDqWEJs91F8rt1B-X0PJGLY6shkKGBPWpk/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1DgIlvlLceFDqWEJs91F8rt1B-X0PJGLY6shkKGBPWpk/edit?usp=sharing)
@@ -294,7 +295,7 @@ When all jobs are completed, the survey results will be loaded in BigQuery in a 
 In the [Google Console for BigQuery](https://console.cloud.google.com/bigquery), you should be able to see the details of each of the new tables 
 
 
-![alt_text](images/image24.png "image_tooltip")
+![alt_text](images/image20.png "image_tooltip")
 
 
 With the survey data in BigQuery, we can easily ask more comprehensive questions to understand the survey responses on a deeper level. For example, let’s say I am trying to understand what programming language is most commonly used by people of different professional titles - I might write a query like:
@@ -337,7 +338,7 @@ GROUP BY 1
 **Note:** that if you would like to run this query for yourself, you can use our [sample Salesforce Account table](https://docs.google.com/spreadsheets/d/1SMm4BAMw9wacJNujO5FLONi1dzUUn2dxoImipQqjriw) and add it into BigQuery using[ these instructions](https://cloud.google.com/bigquery/external-data-drive). Your create table setting should look something like this:
 
 
-![alt_text](images/image25.png "image_tooltip")
+![alt_text](images/image3.png "image_tooltip")
 
 
 
@@ -348,13 +349,13 @@ Now that your survey data is centralized in a data warehouse, you can analyze th
 If you already have a Looker instance you can use the [LookML in this folder ](https://github.com/trifacta/trifacta-google-cloud/tree/main/design-pattern-google-forms/LookML)to get started analyzing the sample survey and CRM data for this pattern. Simply create a new Looker project,  add the LookML, and replace the connection and table names in the file to match your BigQuery configuration. If you don’t have a Looker instance but are interested in learning more, you can [schedule a demo here.](https://looker.com/demo)
 
 
-![alt_text](images/image26.png "image_tooltip")
+![alt_text](images/image16.png "image_tooltip")
 
 
 Alternatively,  to create a report in [Data Studio](https://datastudio.google.com/u/0/), click the frame with the Google cross “Blank Report” and connect to BigQuery. If you want to learn more, a quick start and an introduction to the Data Studio’s main features can be found [here](https://datastudio.google.com/u/0/reporting/0B5FF6JBKbNJxOWItcWo2SVVVeGc/page/DjD). 
 
 
-![alt_text](images/image27.png "image_tooltip")
+![alt_text](images/image14.png "image_tooltip")
 
 
 
