@@ -65,7 +65,7 @@ To generate a cost estimate based on your projected usage, use the [pricing calc
 
 1. In the Google Cloud Console, on the project selector page, select or create a Google Cloud project.
 
-    **Note**: If you don't plan to keep the resources that you create in this procedure, create a new project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.
+> **Note**: If you don't plan to keep the resources that you create in this procedure, create a new project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.
 
 
     [Go to the project selector page](https://console.cloud.google.com/projectselector2/home/dashboard?_ga=2.160760575.336863925.1606037980-454881161.1598040324&_gac=1.187200730.1605625914.Cj0KCQiAhs79BRD0ARIsAC6XpaUEshc6odnj_JRsGRs7YksBGoyLf5QlEBwmp6YpSVvTHYqGq9hfmTMaAhp0EALw_wcB)
@@ -187,13 +187,13 @@ After you have imported the flow, select the imported flow to edit it, your scre
 On the left side of the flow, the data source must be reconnected to a Google Sheets containing the Google Forms results. Right click on the Google Sheet datasets object and select “Replace”. 
 
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/image26.png "image_tooltip")
 
 
 Then click on the “Import Datasets” link at the bottom of the modal. Click the “Edit path” pencil.
 
 
-![alt_text](images/image26.png "image_tooltip")
+![alt_text](images/image2.png "image_tooltip")
  
 
 From there, replace the current value with this link that is pointing to a Google Sheets with some Google Forms results, you can use our example or your own copy: [https://docs.google.com/spreadsheets/d/1DgIlvlLceFDqWEJs91F8rt1B-X0PJGLY6shkKGBPWpk/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1DgIlvlLceFDqWEJs91F8rt1B-X0PJGLY6shkKGBPWpk/edit?usp=sharing)
@@ -253,7 +253,7 @@ The basic idea of the “Google Forms Analytics Design Pattern” flow is to per
 This flow breaks the questions into 4 tables (corresponding to the 4 question categories, for simplicity purposes)
 
 
-![alt_text](images/image19.png "image_tooltip")
+![alt_text](images/image28.png "image_tooltip")
 
 
 We suggest that you explore each of the recipes one by one starting with “Clean Headers” and then “SingleChoiceSELECT-Questions” followed by each other recipes underneath.
@@ -261,10 +261,7 @@ We suggest that you explore each of the recipes one by one starting with “Clea
 All the recipes are commented to explain the various transformation steps. When in a recipe, you can edit a step and preview the before/after state of a particular column. 
 
 
-![alt_text](images/image20.png "image_tooltip")
-
-
-![alt_text](images/image21.png "image_tooltip")
+![alt_text](images/image1.png "image_tooltip")
 
 
 
@@ -273,13 +270,13 @@ All the recipes are commented to explain the various transformation steps. When 
 Now that your source and destinations are properly configured, you can run the flow to transform and load the responses into BigQuery. Select each of the outputs and click the “Run” button. If the specified BigQuery table exists, dataprep will append new rows, otherwise it will create a new table. 
 
 
-![alt_text](images/image22.png "image_tooltip")
+![alt_text](images/image5.png "image_tooltip")
 
 
 Click the “job history” icon on the left pan to monitor the jobs. It should take a few minutes to proceed and load the BigQuery tables. 
 
 
-![alt_text](images/image23.png "image_tooltip")
+![alt_text](images/image22.png "image_tooltip")
 
 
 When all jobs are completed, the survey results will be loaded in BigQuery in a clean, structured, and normalized format ready for analysis.
@@ -378,7 +375,7 @@ Survey solutions have different export formats (often xls, sheets, csv) for summ
 Enriching your survey data warehouse with additional sources will help to drive some further insight. With Dataprep, we can create connections to different sources such as Salesforce or application databases.
 
 
-![alt_text](images/image28.png "image_tooltip")
+![alt_text](images/image9.png "image_tooltip")
 
 
 With other data sources centralized in BigQuery, we can write impactful queries like the ones above to get one step deeper on understanding customer experiences. 
@@ -392,10 +389,7 @@ The easiest way to eliminate billing is to delete the Cloud project you created 
 ## Delete the project
 
 
-    **! Caution**: Deleting a project has the following effects:
-
-
-
+> :warning: **Deleting a project has the following effects:**
 *   **Everything in the project is deleted**. If you used an existing project for this tutorial, when you delete it, you also delete any other work you've done in the project.
 *   **Custom project IDs are lost**. When you created this project, you might have created a custom project ID that you want to use in the future. To preserve the URLs that use the project ID, such as an **appspot.com** URL, delete selected resources inside the project instead of deleting the whole project.
 1. In the Cloud Console, go to the **Manage resources** page.
