@@ -187,7 +187,7 @@ After you have imported the flow, select the imported flow to edit it, your scre
 On the left side of the flow, the data source must be reconnected to a Google Sheets containing the Google Forms results. Right click on the Google Sheet datasets object and select “Replace”. 
 
 
-![alt_text](images/image12.png "image_tooltip")
+![alt_text](images/image2.png "image_tooltip")
 
 
 Then click on the “Import Datasets” link at the bottom of the modal. Click the “Edit path” pencil.
@@ -208,35 +208,31 @@ On the right side of the flow, you need to connect the outputs to your own BigQu
 First, start by editing the “Manual destinations”
 
 
-![alt_text](images/image14.png "image_tooltip")
+![alt_text](images/image13.png "image_tooltip")
 
 
 In the following “Publishing Settings” screen, click the edit button
 
 
-![alt_text](images/image15.png "image_tooltip")
+![alt_text](images/image19.png "image_tooltip")
 
 
 When you see the “Publishing Action” screen, you need to change the connection settings by clicking the BigQuery connection and editing its properties.
 
 
-#### 
-
-
-![alt_text](images/image16.png "image_tooltip")
+![alt_text](images/image21.png "image_tooltip")
 
 
 Select the BigQuery dataset where you want the Google Forms results to be loaded into. You can select “default” if you haven’t created any BigQuery dataset yet. 
 
 
-
-![alt_text](images/image17.png "image_tooltip")
+![alt_text](images/image29.png "image_tooltip")
 
 
 After you have edited the “Manual destinations”, proceed the same way for the “Scheduled destinations” output. 
 
 
-![alt_text](images/image18.png "image_tooltip")
+![alt_text](images/image10.png "image_tooltip")
 
 
 Iterate on each output following the same steps. In total you have to edit 8 destinations. 
