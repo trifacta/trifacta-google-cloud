@@ -135,7 +135,7 @@ Here is an example of a multiple choices question. One has to select one single 
 *   **Transformation requirements**: each question/answer must become a new row in the table and broken into two columns. One column mentioning the question _option_ and the other column with the response.
 
 
-![alt_text](images/image27.png "image_tooltip")
+![alt_text](images/image6.png "image_tooltip")
 
 
 
@@ -157,8 +157,7 @@ Here is an example of a checkbox grid. One can select none to multiple values fr
 
     Second: each individual response must become a new row in the table and broken into two columns. One column mentioning the question _option_ and the other column with the answer. 
 
-
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](images/image27.png "image_tooltip")
 
 
 Next, we’ll show how these transformations are handled with Cloud Dataprep. 
