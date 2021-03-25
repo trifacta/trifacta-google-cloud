@@ -258,6 +258,7 @@ All the recipes are commented to explain the various transformation steps. When 
 
 
 ![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/image7.png "image_tooltip")
 
 
 
