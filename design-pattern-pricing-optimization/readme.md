@@ -10,6 +10,7 @@ The goal of [this guide](technical_guide.md) is to provide a scalable framework 
 * [Google Sheets - Product Pricing](https://docs.google.com/spreadsheets/d/1NKABA24h-lZ-TIAkpXsm-FEr-8UrwCgCzuyNzCoZTk0/edit?usp=sharing)
 * [Google Sheets - Company Descriptions](https://docs.google.com/spreadsheets/d/12UoNZb6tmFIuPQVkWhqN0Bkcgm8oHHUrplYvWUrkDYU/edit?usp=sharing)
 * BigQuery - Company Description
+```
 CREATE TABLE `Company_Descriptions`
 (
   Customer_ID INT64,
@@ -20,8 +21,9 @@ INSERT INTO `Company_Descriptions` values (16080, 'NEW DEVICES CORP.');
 INSERT INTO `Company_Descriptions` values (19913, 'ENELTENGAS');
 INSERT INTO `Company_Descriptions` values (30108, 'CARTOON NT');
 INSERT INTO `Company_Descriptions` values (32492, 'Thomas Ed Automobiles');
-
+```
 ## BigQuery Common Data Model SCHEMA
+```
 CREATE TABLE `CDM_Pricing`
 (
 Fiscal_Date DATETIME,
@@ -106,7 +108,7 @@ Non_Invoiced_Discount_8 FLOAT64,
 Number_of_Records FLOAT64,
 Unit_Sales_1 FLOAT64
 );
-
+```
 ## Disclaimer
 This is not an officially supported Google product.
 
