@@ -9,7 +9,7 @@ The goal of [this guide](technical_guide.md) is to provide a scalable framework 
 * [Google Sheets - Transaction Data](https://docs.google.com/spreadsheets/d/1r9970KpMoF4A8BPosl8eE1pX6sX7nXz81J7EneDlDKk/edit?usp=sharing)
 * [Google Sheets - Product Pricing](https://docs.google.com/spreadsheets/d/1NKABA24h-lZ-TIAkpXsm-FEr-8UrwCgCzuyNzCoZTk0/edit?usp=sharing)
 * [Google Sheets - Company Descriptions](https://docs.google.com/spreadsheets/d/12UoNZb6tmFIuPQVkWhqN0Bkcgm8oHHUrplYvWUrkDYU/edit?usp=sharing)
-* BigQuery - Company Description
+* Alternative BigQuery - Company Descriptions Table
 ```
 CREATE TABLE `Company_Descriptions`
 (
