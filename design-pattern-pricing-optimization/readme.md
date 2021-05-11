@@ -4,7 +4,19 @@ Google Sheets
 - Product Pricing: https://docs.google.com/spreadsheets/d/1NKABA24h-lZ-TIAkpXsm-FEr-8UrwCgCzuyNzCoZTk0/edit?usp=sharing
 - Company Descriptions: https://docs.google.com/spreadsheets/d/12UoNZb6tmFIuPQVkWhqN0Bkcgm8oHHUrplYvWUrkDYU/edit?usp=sharing
 
-BIGQUERY COMMON DATA MODEL SCHEMA
+BIGQUERY COMMON DATA MODEL & SAMPLE DATA SCHEMA
+CREATE TABLE `Company_Descriptions`
+(
+  Customer_ID INT64,
+  Customer_Long_Description STRING
+);
+INSERT INTO `Company_Descriptions` values (15458, 'ENELTEN');
+INSERT INTO `Company_Descriptions` values (16080, 'NEW DEVICES CORP.');
+INSERT INTO `Company_Descriptions` values (19913, 'ENELTENGAS');
+INSERT INTO `Company_Descriptions` values (30108, 'CARTOON NT');
+INSERT INTO `Company_Descriptions` values (32492, 'Thomas Ed Automobiles');
+
+
 CREATE TABLE `CDM_Pricing`
 (
 Fiscal_Date DATETIME,
