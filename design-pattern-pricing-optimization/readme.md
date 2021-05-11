@@ -1,10 +1,15 @@
-SAMPLE DATA
-Google Sheets
-- Transaction Data: https://docs.google.com/spreadsheets/d/1r9970KpMoF4A8BPosl8eE1pX6sX7nXz81J7EneDlDKk/edit?usp=sharing
-- Product Pricing: https://docs.google.com/spreadsheets/d/1NKABA24h-lZ-TIAkpXsm-FEr-8UrwCgCzuyNzCoZTk0/edit?usp=sharing
-- Company Descriptions: https://docs.google.com/spreadsheets/d/12UoNZb6tmFIuPQVkWhqN0Bkcgm8oHHUrplYvWUrkDYU/edit?usp=sharing
+# Analytics Framework for Data-driven Pricing Strategy & Optimization
 
-BIGQUERY COMMON DATA MODEL & SAMPLE DATA SCHEMA
+The goal of [this guide](technical_guide.md) is to provide a scalable framework to design an analytics solution to drive pricing analysis and optimization thanks to a Common Data Model (CDM), reports and ML examples based on BigQuery, BigQuery ML, Dataprep, and Looker.
+
+## Sample Data & Resources
+
+* [Dataprep Pricing Optimization Flow](flow_Pricing_Optimization_Design_Pattern.zip)
+* [Tableau Sample Dashboard](TableauPricingOptimizationDashboard.twbx)
+* [Google Sheets - Transaction Data](https://docs.google.com/spreadsheets/d/1r9970KpMoF4A8BPosl8eE1pX6sX7nXz81J7EneDlDKk/edit?usp=sharing)
+* [Google Sheets - Product Pricing](https://docs.google.com/spreadsheets/d/1NKABA24h-lZ-TIAkpXsm-FEr-8UrwCgCzuyNzCoZTk0/edit?usp=sharing)
+* [Google Sheets - Company Descriptions](https://docs.google.com/spreadsheets/d/12UoNZb6tmFIuPQVkWhqN0Bkcgm8oHHUrplYvWUrkDYU/edit?usp=sharing)
+* BigQuery - Company Description
 CREATE TABLE `Company_Descriptions`
 (
   Customer_ID INT64,
@@ -16,7 +21,7 @@ INSERT INTO `Company_Descriptions` values (19913, 'ENELTENGAS');
 INSERT INTO `Company_Descriptions` values (30108, 'CARTOON NT');
 INSERT INTO `Company_Descriptions` values (32492, 'Thomas Ed Automobiles');
 
-
+## BigQuery Common Data Model SCHEMA
 CREATE TABLE `CDM_Pricing`
 (
 Fiscal_Date DATETIME,
@@ -101,3 +106,8 @@ Non_Invoiced_Discount_8 FLOAT64,
 Number_of_Records FLOAT64,
 Unit_Sales_1 FLOAT64
 );
+
+## Disclaimer
+This is not an officially supported Google product.
+
+All files in this folder are under the Apache License, Version 2.0 unless noted otherwise.
