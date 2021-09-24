@@ -1,6 +1,6 @@
 # Analytics Framework for Data-driven Pricing Strategy & Optimization
 
-The goal of [this guide](technical_guide.md) is to provide a scalable framework to design an analytics solution to drive pricing analysis and optimization thanks to a Common Data Model (CDM), reports and ML examples based on BigQuery, BigQuery ML, Dataprep, and Looker.
+The goal of [this guide](https://codelabs.developers.google.com/retail-price-optimization#0) is to provide a scalable framework to design an analytics solution to drive pricing analysis and optimization thanks to a Common Data Model (CDM), reports and ML examples based on BigQuery, BigQuery ML, Dataprep, and Looker.
 
 ## Sample Data & Resources
 
